@@ -1,0 +1,26 @@
+.site-list__item {
+  box-shadow: 0 -1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+  a[href] {
+    &:hover,
+    &:focus {
+      color: @light-red;
+    }
+
+    &:active {
+      color: rgba(210, 40, 86, 0.3);
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .site-list__item {
+    margin-right: 85px;
+    box-shadow: none;
+    margin-top: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

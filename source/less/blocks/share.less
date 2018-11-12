@@ -1,0 +1,460 @@
+.share {
+  color: @dark-blue;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.share__button--cansel {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Open Sans", "Arial", sans-serif;
+  padding: 16px 35px;
+  color: rgba(40, 54, 69, 0.1);
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 40px;
+  margin-top: 11px;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+}
+
+.share__button--cansel:hover,
+.share__button--cansel:focus {
+  border: 3px solid rgba(40, 54, 69, 0.3);
+  color: rgba(40, 54, 69, 0.3);
+}
+
+.share__button--cansel:active {
+  background-color: rgba(40, 54, 69, 0.3);
+  border-color: transparent;
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.share__button--active {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Open Sans", "Arial", sans-serif;
+  padding: 16px 35px;
+  color: @light-red;
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  border: 3px solid @light-red;
+  border-radius: 40px;
+  margin-top: 37px;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+}
+
+.share__scale--crop {
+  left: -10px;
+}
+
+.share__slogan {
+  background-color: @global-white;
+  color: @dark-blue;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  display: block;
+  width: 280px;
+
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 43px;
+  text-align: center;
+}
+
+.share__column {
+  background-color: @light-gray;
+}
+
+@media (min-width: @tablet) {
+  .share {
+    width: auto;
+  }
+
+  .share__wrapper {
+    background-color: @light-gray;
+  }
+
+  .share__slogan {
+    width: auto;
+    font-size: 18px;
+    padding-right: 22px;
+    padding-top: 45px;
+    padding-bottom: 69px;
+  }
+
+  .share__option {
+    width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 55px;
+  }
+
+  .share__column {
+    width: 300px;
+  }
+
+  .share__column--left {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop) {
+  .share__wrapper {
+    background-color: initial;
+  }
+
+  .share {
+    background-color: @global-white;
+    margin-bottom: 28px;
+  }
+
+  .share__slogan {
+    padding-top: 9px;
+    padding-bottom: 66px;
+  }
+
+  .share__option {
+    background-color: @light-gray;
+    width: 820px;
+    padding: 0 60px;
+    padding-bottom: 55px;
+    padding-top: 20px;
+  }
+
+  .share__column--left {
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.share__image {
+  width: 280px;
+  display: block;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+@media (max-width: @mobile-only) {
+  .share__settings--filters {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .share__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0 36px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .share__tool-item .share__range-controls {
+    display: none;
+  }
+
+  .share__tool-button {
+    margin-bottom: 27px;
+    position: relative;
+  }
+
+  .share__tool-item--active .share__range-controls {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 240px;
+  }
+}
+
+@media (min-width: @tablet) {
+  .share__image {
+    width: 300px;
+    position: relative;
+    display: block;
+    padding: 0;
+    padding-top: 57px;
+    overflow: hidden;
+    height: auto;
+
+    & picture {
+      height: 400px;
+      display: block;
+    }
+
+    & img {
+      width: 300px;
+      height: 400px;
+    }
+  }
+
+  .share__list {
+    border-bottom: none;
+    margin-top: 22px;
+    padding: 0;
+  }
+
+  .share__tool-item {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .share__tool-item:first-child {
+    padding-top: 22px;
+  }
+
+  .share__range-controls {
+    width: 202px;
+    margin-bottom: 34px;
+    margin-top: 34px;
+    margin-right: 18px;
+  }
+
+  .share__tool-button--contrast svg {
+    width: 26px;
+    height: 16px;
+  }
+
+  .share__tool-button--fill svg {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .share__tool-button--contrast svg {
+    width: 43px;
+    height: 32px;
+  }
+
+  .share__column--img {
+    margin-left: 21px;
+  }
+
+  .share__image {
+    padding-top: 37px;
+  }
+
+  .share__tool-item:first-child {
+    padding-top: 3px;
+  }
+
+  .share__tool-item {
+    width: 410px;
+    margin: 0;
+  }
+
+  .share__range-controls {
+    width: 290px;
+    margin-bottom: 34px;
+    margin-top: 34px;
+    margin-right: 29px;
+  }
+}
+
+.share__button-wrapper {
+  padding: 0 20px;
+  padding-bottom: 40px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet) {
+  .share__button-wrapper {
+    padding: 0 10px;
+    margin-top: auto;
+    width: 260px;
+    margin-left: 18px;
+  }
+
+  .share__button--cansel {
+    margin-top: 21px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .share__button-wrapper {
+    width: 410px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2px;
+    padding-bottom: 0;
+    margin-left: 0;
+  }
+}
+
+.share__tool-button {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 58px;
+  height: 67px;
+  font-size: 0;
+  border: 0;
+  background-color: transparent;
+  fill: rgba(40, 56, 69, 0.3);
+  cursor: pointer;
+}
+
+.share__tool-svg path {
+  fill: rgba(40, 56, 69, 0.3);
+}
+
+.share__tool-svg:hover path,
+.share__tool-svg:focus path {
+  fill: rgba(40, 56, 69, 0.5);
+}
+
+.share__tool-svg:active path {
+  fill: @light-red;
+}
+
+@media (max-width: @mobile-only) {
+  .share__tool-button:hover,
+  .share__tool-button:focus {
+    fill: rgba(40, 56, 69, 0.5);
+  }
+
+  .share__tool-button:active {
+    fill: @light-red;
+  }
+
+  .share__tool-button--active {
+    fill: @light-red;
+  }
+
+  .share__tool-button--active:hover,
+  .share__tool-button--active:focus {
+    fill: @light-red;
+  }
+}
+
+.share__scale {
+  position: relative;
+  height: 2px;
+  background: @dark-blue;
+}
+
+.share__scale::after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  padding: 0;
+  position: absolute;
+  top: -7px;
+  left: 192px;
+  border: 2px solid @light-red;
+  background-color: @light-gray;
+  border-radius: 50%;
+}
+
+.share__scale:active::after {
+  width: 14px;
+  height: 14px;
+  border: none;
+  background-color: @light-red;
+}
+
+@media (min-width: @tablet) {
+  .share__tool-button {
+    fill: @light-red;
+  }
+
+  .share__scale--crop {
+    left: 0;
+  }
+
+  .share__scale--crop::after {
+    top: -8px;
+    left: 148px;
+  }
+
+  .share__scale--fill::after {
+    top: -6px;
+    left: 25px;
+  }
+
+  .share__scale--light::after {
+    top: -6px;
+    left: 95px;
+  }
+
+  .share__tool-button-svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .share__tool-svg {
+    width: 29px;
+    height: 24px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .share__scale--crop::after {
+    top: -8px;
+    left: 71px;
+  }
+
+  .share__scale--fill::after {
+    top: -6px;
+    left: 247px;
+  }
+
+  .share__scale--light::after {
+    top: -6px;
+    left: 160px;
+  }
+
+  .share__tool-button {
+    padding: 0;
+  }
+
+  .share__tool-button-svg {
+    width: 46px;
+    height: 45px;
+  }
+
+  .share__tool-svg {
+    width: 44px;
+    height: 33px;
+  }
+
+  .share__button--active,
+  .share__button--cansel {
+    margin-top: 102px;
+    width: 183px;
+  }
+}
+
+.share__button--active:hover,
+.share__button--active:focus {
+  border: 3px solid @light-red;
+  background-color: @light-red;
+  color: @global-white;
+}
+
+.share__button--active:active {
+  background-color: @light-red;
+  color: rgba(255, 255, 255, 0.3);
+}

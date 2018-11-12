@@ -1,0 +1,304 @@
+.capabilities {
+  position: relative;
+  margin: 0 auto;
+  color: @dark-blue;
+  background-color: @global-white;
+  text-align: center;
+  margin-bottom: 43px;
+}
+
+.capabilities__wrapper {
+  background-color: @light-gray;
+  padding-top: 52px;
+  position: relative;
+}
+
+.capabilities__wrapper::after {
+  content: " ";
+  display: block;
+  bottom: 0;
+  width: 157px;
+  height: 277px;
+  margin-top: 39px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+    background-size: 157px auto;
+  }
+}
+
+.capabilities__slogan-container {
+  margin: 0 auto;
+  padding: 0 18px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.capabilities__slogan-container::before {
+  content: "";
+  z-index: 5;
+  position: absolute;
+  bottom: -82px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 88px;
+  background: url("../img/bg-triangle-white.svg") no-repeat center bottom;
+  background-size: cover;
+}
+
+.capabilities__slogan {
+  display: block;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 200;
+  margin-bottom: 29px;
+}
+
+.capabilities__slogan:last-child {
+  line-height: 56px;
+  margin: 0;
+}
+
+.capabilities__list {
+  margin: 0;
+  position: relative;
+  list-style: none;
+  padding: 0 20px;
+  padding-top: 50px;
+}
+
+.capabilities__item {
+  margin-bottom: 29px;
+  color: @total-black;
+}
+
+.capabilities__title {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.capabilities__slogan br {
+  display: none;
+}
+
+.capabilities__description {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media (min-width: @tablet) {
+  .capabilities {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .capabilities__slogan-container {
+    width: auto;
+    margin-bottom: 40px;
+    padding: 0;
+
+    &::before {
+      bottom: -117px;
+    }
+  }
+
+  .capabilities__slogan {
+    font-size: 40px;
+    line-height: 47px;
+    margin: 0;
+    padding-top: 37px;
+  }
+
+  .capabilities__slogan:last-child {
+    padding: 0 140px;
+  }
+
+  .capabilities__wrapper {
+    width: auto;
+    padding-top: 40px;
+    display: flex;
+  }
+
+  .capabilities__wrapper::after {
+    content: " ";
+    z-index: 10;
+    bottom: 0;
+    order: 1;
+    width: 272px;
+    height: 481px;
+    left: 20px;
+    top: -66px;
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      background-size: 270px, 481px;
+      margin-top: -30px;
+    }
+  }
+
+  .capabilities__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    order: 2;
+    width: 310px;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 42px;
+    text-align: left;
+  }
+
+  .capabilities__item {
+    text-align: left;
+    margin-bottom: 18px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .capabilities {
+    width: auto;
+  }
+
+  .capabilities::before {
+    bottom: -70px;
+  }
+
+  .capabilities__wrapper {
+    width: auto;
+    flex-direction: row;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+    padding-top: 135px;
+  }
+
+  .capabilities__slogan br {
+    display: block;
+  }
+
+  .capabilities__slogan-container {
+    width: auto;
+    margin-bottom: 40px;
+  }
+
+  .capabilities__slogan-container::before {
+    bottom: -230px;
+    height: 190px;
+  }
+
+  .capabilities__slogan {
+    padding-top: 35px;
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 5px;
+  }
+
+  .capabilities__wrapper::before {
+    width: 1200px;
+    height: 95px;
+    top: -95px;
+  }
+
+  .capabilities__wrapper::after {
+    display: none;
+  }
+
+  .capabilities__list {
+    width: 940px;
+    padding: 0 10px;
+    padding-top: 264px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .capabilities__item {
+    position: relative;
+    width: 300px;
+    text-align: center;
+  }
+
+  .capabilities__item--mood::before {
+    content: " ";
+    position: absolute;
+    bottom: 205px;
+    width: 292px;
+    height: 302px;
+    left: 5px;
+    top: -357px;
+    z-index: 10;
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
+      background-size: 292px, 302px;
+    }
+  }
+
+  .capabilities__item--world::before {
+    content: " ";
+    position: absolute;
+    bottom: 205px;
+    width: 292px;
+    height: 302px;
+    left: 5px;
+    top: -357px;
+    z-index: 10;
+    background-image: url("../img/iphone-screen-2-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-2-desktop@2x.png");
+      background-size: 292px, 302px;
+    }
+  }
+
+  .capabilities__item--friends::before {
+    content: " ";
+    position: absolute;
+    bottom: 205px;
+    width: 292px;
+    height: 302px;
+    left: 5px;
+    top: -357px;
+    z-index: 10;
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
+      background-size: 292px, 302px;
+    }
+  }
+
+  .capabilities__title {
+    display: block;
+    padding: 0 35px;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 24px;
+  }
+
+  .capabilities__description {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 30px;
+    margin: 0;
+  }
+}

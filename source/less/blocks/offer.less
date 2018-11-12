@@ -1,0 +1,201 @@
+.offer {
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 24px;
+  color: @global-white;
+  background-color: @navy-blue;
+  margin-bottom: 40px;
+}
+
+.offer__title {
+  font-size: 50px;
+  line-height: 50px;
+  color: @global-white;
+  font-weight: 200;
+}
+
+.offer__download {
+  margin-bottom: 32px;
+}
+
+.offer__link {
+  display: inline-block;
+  min-width: 281px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  box-sizing: border-box;
+  padding: 17px 35px;
+  color: @global-white;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  border: 2px solid @global-white;
+  border-radius: 40px;
+  margin-top: 27px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.offer__link:hover,
+.offer__link:focus {
+  color: #d22856;
+  background-color: @global-white;
+}
+
+.offer__link:active {
+  color: rgba(210, 40, 86, 0.3);
+}
+
+.offer__version {
+  text-align: center;
+}
+
+.version__description {
+  padding: 0 20px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: @mobile-only) {
+  .offer__version::before {
+    content: "";
+    display: block;
+    min-height: 460px;
+    min-width: 320px;
+    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 257px 285px, cover;
+    background-position: 0 bottom, center;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+    }
+  }
+
+  .offer__title {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet) {
+  .offer {
+    width: auto;
+    display: flex;
+    align-items: flex-start;
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 700px 545px, cover;
+    background-position: bottom, center;
+    min-height: 589px;
+    padding-top: 140px;
+    margin-bottom: 13px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+      background-size: 700px 545px, cover;
+    }
+  }
+
+  .offer__title {
+    font-size: 40px;
+    line-height: 47px;
+    display: block;
+    margin: 0;
+    padding: 0 35px;
+    padding-top: 64px;
+  }
+
+  .offer__download {
+    display: block;
+    padding: 0;
+    margin-bottom: 45px;
+  }
+
+  .offer__link {
+    width: 100%;
+    margin-top: 32px;
+  }
+
+  .offer__version {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+
+  .version__description {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop) {
+  .offer {
+    width: auto;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    padding-top: 154px;
+    margin-bottom: 35px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .offer__wrapper {
+    width: 960px;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 620px;
+      right: 0;
+      height: 705px;
+      background-image: url("../img/iphone-hand-desktop@1x.png");
+      background-position: -315px 55px;
+      background-repeat: no-repeat;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/iphone-hand-desktop@2x.png");
+        background-size: cover;
+        width: 649px;
+        right: 0;
+        height: 700px;
+      }
+    }
+  }
+
+  .offer__version {
+    margin: 0;
+    margin-left: 10px;
+  }
+
+  .offer__title {
+    font-size: 50px;
+    line-height: 60px;
+    padding: 0 30px;
+    padding-top: 64px;
+  }
+
+  .offer__download {
+    margin-bottom: 67px;
+  }
+
+  .offer__link {
+    width: 100%;
+    margin-top: 52px;
+    font-size: 21px;
+    line-height: 18px;
+    padding: 16px 19px;
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "extends": "stylelint-config-htmlacademy",
+  "ignoreFiles": ["source/less/normalize.less"],
+
+  "rules": {
+    "declaration-no-important": true,
+    "indentation": [2, {"ignore": ["inside-parens"]}]
+
+  }
+}

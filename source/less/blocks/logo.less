@@ -1,0 +1,45 @@
+.logo {
+  display: none;
+}
+
+@media (max-width: @mobile-only) {
+  .logo--mobile {
+    display: block;
+    width: 75px;
+    height: 22px;
+  }
+}
+
+@media (min-width: @tablet) and (max-width: @tablet-only) {
+  .logo--tablet {
+    display: block;
+    width: 147px;
+    height: 40px;
+    fill: @global-white;
+  }
+}
+
+@media (min-width: @desktop) {
+  .logo--desktop {
+    display: block;
+    width: 147px;
+    height: 40px;
+    fill: @global-white;
+  }
+}
+
+@media (max-width: @tablet-only) {
+  .logo--mobile-footer {
+    display: block;
+    width: 147px;
+    height: 40px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .logo--desktop-footer {
+    display: block;
+    width: 147px;
+    height: 40px;
+  }
+}

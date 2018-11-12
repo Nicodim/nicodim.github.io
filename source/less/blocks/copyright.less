@@ -1,0 +1,39 @@
+.copyright__link {
+  width: 28px;
+  height: 36px;
+  padding-right: 19px;
+  padding-top: 16px;
+  fill: @light-red;
+}
+
+
+.copyright__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-top: 5px;
+  display: block;
+}
+
+@media (min-width: @tablet) {
+  .copyright__text {
+    padding-left: 20px;
+    padding-top: 11px;
+  }
+}
+
+.copyright__link:hover,
+.copyright__link:focus {
+  fill: @dark-blue;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}
+
+@media (min-width: @desktop) {
+  .copyright__text {
+    font-size: 18px;
+    padding-left: 0;
+  }
+}

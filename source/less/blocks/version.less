@@ -1,0 +1,25 @@
+.version__list {
+  list-style: none;
+  padding: 0;
+  width: 205px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.version__link {
+  color: @global-white;
+}
+
+@media (min-width: @tablet) {
+  .version__list {
+    margin-bottom: 28px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .version__list {
+    margin-bottom: 48px;
+  }
+}

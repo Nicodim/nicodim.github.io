@@ -1,0 +1,129 @@
+.application-effect__wrapper {
+  display: none;
+  padding-right: 20px;
+  margin: 0 auto;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.application-effect__title {
+  font-size: 30px;
+  line-height: 36px;
+  color: @total-black;
+}
+
+.application-effect__text {
+  width: 300px;
+  margin: 8px 0;
+  margin-bottom: 14px;
+  color: @total-black;
+}
+
+.application-effect__link {
+  text-decoration: underline;
+  color: @light-red;
+
+  &:hover {
+    color: @dark-blue;
+  }
+
+  &:active {
+    text-decoration: none;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet) {
+  .application-effect__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+    padding: 25px 20px;
+  }
+
+  .application-effect__description {
+    flex-direction: column;
+    width: 310px;
+    padding-top: 72px;
+    margin-left: auto;
+  }
+
+  .application-effect__timer {
+    width: 300px;
+    height: 345px;
+    margin-left: -30px;
+    text-align: center;
+    font-size: 120px;
+    line-height: 120px;
+    font-weight: bold;
+    color: @light-red;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    transform: scale(0.8);
+  }
+
+  .application-effect__number {
+    display: block;
+    width: 210px;
+    height: 120px;
+    padding: 0;
+    margin-left: 23px;
+    padding-top: 43px;
+    padding-bottom: 54px;
+    padding-right: 6px;
+    padding-left: 4px;
+    margin-top: 68px;
+    border: 17px solid @light-red;
+    border-radius: 50%;
+  }
+
+  .application-effect__title {
+    display: block;
+    width: 200px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .application-effect {
+    background-color: @light-gray;
+  }
+
+  .application-effect__wrapper {
+    width: 940px;
+    padding-top: 35px;
+    padding-bottom: 64px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .application-effect__timer {
+    width: 360px;
+    margin: 0;
+    transform: none;
+  }
+
+  .application-effect__description {
+    width: 574px;
+    padding-top: 89px;
+  }
+
+  .application-effect__title {
+    display: block;
+    width: auto;
+  }
+
+  .application-effect__text {
+    width: 545px;
+    margin-top: 21px;
+    margin-bottom: 31px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .application-effect__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

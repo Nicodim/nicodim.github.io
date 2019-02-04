@@ -1,297 +1,210 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <title>Красный Ресторан</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <title>Тестовое задание</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link href="http://allfont.ru/allfont.css?fonts=courier-new" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/style.min.css" />
 </head>
-<body>
+
+<body class="page">
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <nav class="main-nav main-nav--closed">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site__list">
-            <li class="site-list__item">
-              <a class="main-nav__link" href="#">Рестораны</a>
-            </li>
-            <li class="site-list__item">
-              <a class="main-nav__link" href="#">Доставка</a>
-            </li>
-            <li class="site-list__item">
-              <a class="main-nav__link" href="#">Караоке</a>
-            </li>
-            <li class="site-list__item">
-              <a class="main-nav__link" href="#">О нас</a>
-            </li>
-            <li class="site-list__item">
-              <a class="main-nav__link" href="#">Новости</a>
-            </li>
-            <li class="site-list__item">
-              <a class="main-nav__link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo.png" width="64" height="64" alt="Лого Ресторана">
-      </a>
-      <div class="page-header__person">
-        <a class="user-list__login" href="login.html">
-          <svg class="user-list__login-icon" width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0148 18.4874C8.06756 18.4874 5.12033 18.4888 2.17255 18.487C1.26227 18.4865 1 18.2668 1 17.5013C0.999454 16.026 1.81631 14.9394 3.35057 14.339C4.28162 13.9751 5.33178 13.8308 6.33004 13.593C6.56553 13.5367 6.81468 13.519 7.0469 13.4553C8.37244 13.0904 8.34786 13.2291 7.9774 12.0065C7.76923 11.3196 7.18295 10.6886 6.65186 10.1087C6.04428 9.44555 5.57055 8.76144 5.45636 7.91863C5.44215 7.81532 5.38697 7.68966 5.4345 7.61102C6.02351 6.63697 5.54433 5.59173 5.71863 4.58557C5.85577 3.79117 6.1623 3.1173 6.79556 2.53092C6.94254 2.39503 7.04526 2.18328 7.06767 1.99806C7.13596 1.42843 7.45068 1.08405 8.12657 1.03937C10.216 0.902549 12.2425 1.10825 14.1664 1.87892C15.3624 2.3578 16.047 3.15267 16.2295 4.24212C16.3273 4.82292 16.2765 5.42047 16.3246 6.00871C16.3585 6.42988 16.4273 6.85105 16.5142 7.2671C16.7076 8.19228 16.3301 8.98203 15.7252 9.71128C15.4668 10.0231 15.1466 10.2986 14.857 10.5913C14.2724 11.1828 13.9615 11.8674 13.8648 12.6348C13.8238 12.961 13.9145 13.1863 14.3073 13.27C14.9794 13.4138 15.6487 13.5707 16.3273 13.6861C17.6283 13.9058 18.8615 14.232 19.8472 15.0427C20.8083 15.8329 21.1154 16.8041 20.9629 17.9024C20.9001 18.3543 20.528 18.4893 20.0422 18.4884C18.5686 18.4851 17.0945 18.4879 15.6209 18.4879C14.085 18.4879 12.5501 18.4874 11.0148 18.4874ZM7.92823 1.82354C8.27792 2.47368 7.83862 2.7664 7.45724 3.12242C7.14908 3.40956 6.8196 3.77255 6.7524 4.13555C6.61744 4.86759 6.62017 5.62337 6.63438 6.36845C6.64202 6.77798 6.84364 7.18193 6.41637 7.54167C6.32457 7.61939 6.33004 7.86186 6.39998 7.98285C6.7289 8.55155 7.00374 9.16818 7.46762 9.64938C8.36425 10.5783 9.04997 11.5444 9.05543 12.7893C9.05871 13.4888 8.92812 13.7396 8.13422 13.9583C7.34141 14.1771 6.52291 14.3376 5.70442 14.4782C4.68923 14.6532 3.71392 14.8961 2.93531 15.5081C2.19386 16.0903 1.81194 16.799 1.94963 17.6842C2.09278 17.7084 2.17146 17.7326 2.25014 17.7326C8.04133 17.7358 13.8325 17.7349 19.6237 17.7428C20.0204 17.7433 20.1903 17.5571 20.0947 17.2961C19.904 16.7762 19.7368 16.2089 19.362 15.7887C18.62 14.9552 17.4704 14.6918 16.312 14.4791C15.4367 14.3181 14.5696 14.1208 13.7112 13.9011C13.1867 13.7671 12.9725 13.4348 12.961 12.9443C12.931 11.6798 13.5096 10.643 14.4926 9.74293C15.0608 9.22263 15.5231 8.65719 15.6296 7.93399C15.6536 7.77343 15.5908 7.60171 15.5586 7.4365C15.4974 7.12283 15.3892 6.81196 15.3728 6.49689C15.3362 5.78765 15.4001 5.07097 15.316 4.36684C15.2269 3.6213 14.7789 3.03632 13.9604 2.67239C12.855 2.18049 11.677 1.90963 10.446 1.83238C9.64608 1.78305 8.83961 1.82354 7.92823 1.82354Z" fill="#575757" stroke="#575757"/>
-          </svg>
-          Константин
-        </a>
-      </div>
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="img/logo.png" width="154" height="52" alt="лого CSSSR">
+    </a>
+    <div class="page-header__title">
+      <img class="page-header__title-image" src="img/title.png" width="221" height="118" alt="большой заголовок">
     </div>
   </header>
-  <main class="page-main">
-    <h1 class="visually-hidden">Меню ресторана</h1>
-    <div class="page-main__columns">
-      <div class="page-main__columns--left">
-        <section class="order">
-          <div class="order__wrapper">
-            <div class="order__container">
-              <div class="order__title-container">
-                <h2 class="order__title">
-                  Ресторан
-                </h2>
-                <ul class="order__list">
-                  <li class="order__item">
-                    <p class="order__name">Кухня</p>
-                    <b class="order__details">Восточная</b>
-                  </li>
-                  <li class="order__item">
-                    <p class="order__name">Заказ</p>
-                    <b class="order__details">От 1000 ₽</b>
-                  </li>
-                  <li class="order__item">
-                    <p class="order__name">Доставка</p>
-                    <b class="order__details">с 11:00 до 02:00</b>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="order__about">
-              <a class="order__about-link" href="about.html">О ресторане</a>
-            </div>
-          </div>
-        </section>
-        <section class="categories">
-          <h2 class="visually-hidden">
-            Категории
-          </h2>
-          <div class="categories__list-wrapper">
-            <ul class="categories__list">
-              <li class="categories__item categories__item--active"><a class="categories__link categories__link--active">Популярные<sup class="categories__link-sup">17</sup></a></li>
-              <li class="categories__item"><a href="" class="categories__link">Горячее<sup class="categories__link-sup">8</sup></a></li>
-              <li class="categories__item"><a href="" class="categories__link">Гарниры<sup class="categories__link-sup">65</sup></a></li>
-              <li class="categories__item"><a href="" class="categories__link">Выпечка<sup class="categories__link-sup">50</sup></a></li>
-              <li class="categories__item"><a href="" class="categories__link">Гриль<sup class="categories__link-sup">20</sup></a></li>
-              <li class="categories__item"><a href="" class="categories__link">Детское<sup class="categories__link-sup">19</sup></a></li>
-              <li class="categories__item"><a href="" class="categories__link">Закуски<sup class="categories__link-sup">7</sup></a></li>
-              <li class="categories__item"><a href="" class="categories__link">Супы<sup class="categories__link-sup">24</sup></a></li>
-              <li class="categories__item"><a href="" class="categories__link">Детское<sup class="categories__link-sup">27</sup></a></li>
-              <li class="categories__item"><a href="" class="categories__link">Закуски<sup class="categories__link-sup">27</sup></a></li>
-            </ul>
-          </div>
-          <a class="categories__list-link"><svg class="categories__list-img" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            width="16px" height="16px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
-            <g>
-              <g>
-                <rect width="8" height="8"/>
-                <rect x="24" width="8" height="8"/>
-                <rect x="12" width="8" height="8"/>
-                <rect y="12" width="8" height="8"/>
-                <rect x="24" y="12" width="8" height="8"/>
-                <rect x="12" y="12" width="8" height="8"/>
-                <rect y="24" width="8" height="8"/>
-                <rect x="24" y="24" width="8" height="8"/>
-                <rect x="12" y="24" width="8" height="8"/>
-              </g>
-            </g>
-          </svg>
-        </a>
-      </section>
-      <section class="catalog">
-        <div class="catalog__title-container">
-          <h3 class="catalog__title">Популярные</h3>
-          <div class="catalog__category">
-            <p class="catalog__category--price">По цене</p>
-          </div>
-        </div>
-        <ul class="catalog__list">
-          <li class="catalog__item">
-            <a class="catalog__item-image" href="#">
-              <img src="img/catalog-img1.png" width="273" height="200" alt="фото каталога">
-            </a>
-            <div class="catalog__info-page">
-              <p class="catalog__info-name">Плов Чайханский<span class="catalog__info-weight">&nbsp;250 г</span></p>
-              <p class="catalog__info-price">246 ₽</p>
-            </div>
-            <div class="catalog__discription">
-              <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...<b><a class="catalog__discription-link">подробнее</a></b></p>
-            </div>
+  <section class="main-info">
+    <fieldset class="main-info__fieldset">
+      <ul class="main-info__list">
+        <li class="main-info__option">
+          <label class="main-info__label"  for="user-surname">Полное ФИО</label>
+          <input class="main-info__input" id="user-name" type="text" name="user-name" placeholder="Иванов Иван Иванович" value="Кравцов Николай Игоревич">
+        </li>
+        <li class="main-info__option">
+          <label class="main-info__label"  for="birthday">Год рождения</label>
+          <input class="main-info__input" id="birthday" type="text" name="birthday" placeholder="1990"  value="1991">
+        </li>
+        <li class="main-info__option">
+          <label class="main-info__label" for="location">Место жительства</label>
+          <input class="main-info__input" id="location" type="text" name="location" placeholder="г. Иваново, Россия" value="г. Санкт-Петербург, Россия">
+        </li>
+        <li class="main-info__option">
+          <label class="main-info__label" for="skype">Скайп</label>
+          <input class="main-info__input" id="skype" type="text" name="skype" placeholder="ivanov" value="n_kravtsov">
+        </li>
+        <li class="main-info__option">
+          <label class="main-info__label" for="mail">Почта</label>
+          <input class="main-info__input" id="mail" type="text" name="mail" placeholder="ivanov@gmail.com" value="nicky.kravtsov@gmail.com">
+        </li>
+      </ul>
+    </fieldset>
+  </section>
+  <section class="checkbox">
+    <div class="checkbox__description">
+      <h3 class="checkbox__title">Расскажите о себе чекбоксами</h3>
+      <p class="checkbox__text">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей.
+        Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</p>
+      </div>
+      <fieldset class="checkbox__fieldset">
+        <ul class="checkbox__list">
+          <li class="checkbox__option">
+            <input class="visually-hidden checkbox__input" type="checkbox" name="БЭМ/OOCSS" id="filter-BM" checked>
+            <label class="checkbox__label" for="filter-BM">БЭМ/OOCSS</label>
           </li>
-          <li class="catalog__item">
-            <a class="catalog__item-image catalog__item-js" href="#">
-              <img src="img/open.png" width="273" height="200" alt="фото каталога">
-            </a>
-            <div class="catalog__info-page">
-              <p class="catalog__info-name">Плов Чайханский <span class="catalog__info-weight">&nbsp;250 г</span></p>
-              <p class="catalog__info-price">246 ₽</p>
-            </div>
-            <div class="catalog__discription">
-              <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...<b><a class="catalog__discription-link">подробнее</a></b></p>
-            </div>
+          <li class="checkbox__option">
+            <input class="visually-hidden checkbox__input" type="checkbox" name="Pug (Jade)" id="filter-Pug" >
+            <label class="checkbox__label" for="filter-Pug">Pug (Jade)</label>
           </li>
-          <li class="catalog__item">
-            <a class="catalog__item-image catalog__item-js" href="#">
-              <img src="img/catalog-img3.png" width="273" height="200" alt="фото каталога">
-            </a>
-            <div class="catalog__info-page">
-              <p class="catalog__info-name">Плов Чайханский <span class="catalog__info-weight">&nbsp;250 г</span></p>
-              <p class="catalog__info-price">246 ₽</p>
-            </div>
-            <div class="catalog__discription">
-              <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...<b><a class="catalog__discription-link">подробнее</a></b></p>
-            </div>
+          <li class="checkbox__option">
+            <input class="visually-hidden checkbox__input" type="checkbox" name="Stylus/LESS/SASS" id="filter-LESS" checked>
+            <label class="checkbox__label" for="filter-LESS">Stylus/LESS/SASS</label>
           </li>
-          <li class="catalog__item">
-            <a class="catalog__item-image" href="#">
-              <img src="img/catalog-img4.png" width="273" height="200" alt="фото каталога">
-            </a>
-            <div class="catalog__info-page">
-              <p class="catalog__info-name">Плов Чайханский <span class="catalog__info-weight">&nbsp;250 г</span></p>
-              <p class="catalog__info-price">246 ₽</p>
-            </div>
-            <div class="catalog__discription">
-              <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...<b><a class="catalog__discription-link">подробнее</a></b></p>
-            </div>
+          <li class="checkbox__option">
+            <input class="visually-hidden checkbox__input" type="checkbox" name="Работаю с SVG" id="filter-SVG" checked>
+            <label class="checkbox__label" for="filter-SVG">Работаю с SVG</label>
           </li>
-          <li class="catalog__item">
-            <a class="catalog__item-image" href="#">
-              <img src="img/catalog-img5.png" width="273" height="200" alt="фото каталога">
-            </a>
-            <div class="catalog__info-page">
-              <p class="catalog__info-name">Плов Чайханский <span class="catalog__info-weight">&nbsp;250 г</span></p>
-              <p class="catalog__info-price">246 ₽</p>
-            </div>
-            <div class="catalog__discription">
-              <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...<b><a class="catalog__discription-link">подробнее</a></b></p>
-            </div>
+          <li class="checkbox__option">
+            <input class="visually-hidden checkbox__input" type="checkbox" name="Верстаю семантично" id="filter-SM" checked>
+            <label class="checkbox__label" for="filter-SM">Верстаю семантично</label>
           </li>
-          <li class="catalog__item">
-            <a class="catalog__item-image" href="#">
-              <img src="img/catalog-img6.png" width="273" height="200" alt="фото каталога">
-            </a>
-            <div class="catalog__info-page">
-              <p class="catalog__info-name">Плов Чайханский <span class="catalog__info-weight">&nbsp;250 г</span></p>
-              <p class="catalog__info-price">246 ₽</p>
-            </div>
-            <div class="catalog__discription">
-              <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...<b><a class="catalog__discription-link">подробнее</a></b></p>
-            </div>
+          <li class="checkbox__option">
+            <input class="visually-hidden checkbox__input" type="checkbox" name="Accessibility (A11Y)" id="filter-Accessibility">
+            <label class="checkbox__label" for="filter-Accessibility">Accessibility (A11Y)</label>
           </li>
-          <li class="catalog__item">
-            <a class="catalog__item-image" href="#">
-              <img src="img/catalog-img7.png" width="273" height="200" alt="фото каталога">
-            </a>
-            <div class="catalog__info-page">
-              <p class="catalog__info-name">Плов Чайханский <span class="catalog__info-weight">&nbsp;250 г</span></p>
-              <p class="catalog__info-price">246 ₽</p>
-            </div>
-            <div class="catalog__discription">
-              <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...<b><a class="catalog__discription-link">подробнее</a></b></p>
-            </div>
+          <li class="checkbox__option">
+            <input class="visually-hidden checkbox__input" type="checkbox" name="ES2015/ES2016" id="filter-ES">
+            <label class="checkbox__label" for="filter-ES">ES2015/ES2016</label>
           </li>
-          <li class="catalog__item">
-            <a class="catalog__item-image" href="#">
-              <img src="img/catalog-img8.png" width="273" height="200" alt="фото каталога">
-            </a>
-            <div class="catalog__info-page">
-              <p class="catalog__info-name">Плов Чайханский <span class="catalog__info-weight">&nbsp;250 г</span></p>
-              <p class="catalog__info-price">246 ₽</p>
-            </div>
-            <div class="catalog__discription">
-              <p>Камчатский краб, авокадо, свежие овощи и цитрусовый...<b><a class="catalog__discription-link">подробнее</a></b></p>
-            </div>
+          <li class="checkbox__option">
+            <input class="visually-hidden checkbox__input" type="checkbox" name="Gulp/GRUNT" id="filter-Gulp" checked>
+            <label class="checkbox__label" for="filter-Gulp">Gulp/GRUNT</label>
+          </li>
+          <li class="checkbox__option">
+            <input class="visually-hidden checkbox__input" type="checkbox" name="Webpack" id="filter-Webpack">
+            <label class="checkbox__label" for="filter-Gulp">Webpack</label>
+          </li>
+          <li class="checkbox__option">
+            <input class="visually-hidden checkbox__input" type="checkbox" name="WebGL" id="filter-WebGL">
+            <label class="checkbox__label" for="filter-WebGL">Дружу с WebGL</label>
+          </li>
+          <li class="checkbox__option">
+            <input class="visually-hidden checkbox__input" type="checkbox" name="jQuery" id="filter-jQuery" checked>
+            <label class="checkbox__label" for="filter-jQuery">jQuery</label>
+          </li>
+          <li class="checkbox__option">
+            <input class="visually-hidden checkbox__input" type="checkbox" name="Angular" id="filter-Angular">
+            <label class="checkbox__label" for="filter-Angular">Знаю/изучаю Angular</label>
+          </li>
+          <li class="checkbox__option">
+            <input class="visually-hidden checkbox__input" type="checkbox" name="React" id="filter-React">
+            <label class="checkbox__label" for="filter-React">Знаю/изучаю React</label>
+          </li>
+          <li class="checkbox__option">
+            <input class="visually-hidden checkbox__input" type="checkbox" name="Node.js" id="filter-Node" checked>
+            <label class="checkbox__label" for="filter-Node">Знаю/изучаю Node.js</label>
+          </li>
+          <li class="checkbox__option">
+            <input class="visually-hidden checkbox__input" type="checkbox" name="Git" id="filter-Git" checked>
+            <label class="checkbox__label" for="filter-Git">Использую Git</label>
+          </li>
+          <li class="checkbox__option">
+            <input class="visually-hidden checkbox__input" type="checkbox" name="eye" id="filter-eye" checked>
+            <label class="checkbox__label" for="filter-eye">С глазомером всё ок</label>
+          </li>
+          <li class="checkbox__option">
+            <input class="visually-hidden checkbox__input" type="checkbox" name="csssr" id="filter-csssr" checked>
+            <label class="checkbox__label" for="filter-csssr">Читаю <a class="checkbox__link" href="http://blog.csssr.ru">blog.csssr.ru</a></label>
+          </li>
+          <li class="checkbox__option">
+            <input class="visually-hidden checkbox__input" type="checkbox" name="lazy" id="filter-lazy">
+            <label class="checkbox__label" for="filter-lazy">Я ленивый(-ая)</label>
+          </li>
+          <li class="checkbox__option">
+            <input class="visually-hidden checkbox__input" type="checkbox" name="English" id="filter-English" checked>
+            <label class="checkbox__label" for="filter-English">У меня хороший английский</label>
           </li>
         </ul>
+      </fieldset>
+    </section>
+    <section class="slider">
+      <div class="slider__wrapper">
+        <div class="slider__description">
+          <h3 class="slider__title">Уровень владения JavaScript</h3>
+        </div>
+        <input class="slider__line" type="range" min="0" max="100" step="1" value="18">
+        <ul class="slider__list">
+          <li class="slider__option"><a href="" class="slider__link">Не владею</a></li>
+          <li class="slider__option slider__option--active"><a href="" class="slider__link">Использую готовые решения</a></li>
+          <li class="slider__option"><a href="" class="slider__link">Использую готовые решения и умею их переделывать</a></li>
+          <li class="slider__option"><a href="" class="slider__link">Пишу сложный JS с нуля</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="about">
+      <div class="about__description">
+        <h3 class="about__title">Расскажите о себе словами</h3>
+        <p class="about__text">Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR.
+          Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.</p>
+        </div>
+        <textarea class='autoExpand' rows='3' data-min-rows='3' cols="70" placeholder='Нуу-у-уу...ээээ'>Привет, меня зовут Николай, вакансия привлекла меня тем, что, судя по отзывам моих друзей, компания занимается интересными проектами и имеет лояльную политику в отношении молодых специалистов, в ходе работы с вами хотел бы прокачать свои знания JS и получить опыт разработки проектов в команде.</textarea>
       </section>
-    </div>
-    <section class="my-order">
-      <a href="#" class="my-order__link">
-        <b class="my-order__title">Мой заказ</b>
-        <p class="my-order__number">Пока пусто :)</p>
-      </a>
-    </section>
-  </div>
-</main>
-<section class="modal">
-  <div class="modal__wrapper">
-    <div class="modal__image">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/big-open.png" width="850" height="630">
-          <img src="img/catalog-img7.png" width="273" height="200" alt="фото каталога">
-        </picture>
-      </div>
-      <div class="modal__container">
-        <div class="modal__description">
-          <div class="modal__description-container">
-            <h3 class="modal__title">Стейк из говядины <span class="modal__title-weight">250 г</span></h3>
-            <ul class="modal__list">
-              <li class="modal__item">
-                <h3 class="modal__item-title">Описание</h3>
-                <p class="modal__item-text">Стейк из поясничной части мраморной говядины. Рекомендуемая степень прожарки medium</p>
-              </li>
-              <li class="modal__item">
-                <h3 class="modal__item-title">Состав</h3>
-                <p class="modal__item-text">Микс салатов, лосось, соус терияки, соус Унаги</p>
-              </li>
-              <li class="modal__item">
-                <h3 class="modal__item-title">Пищевая ценность</h3>
-                <ul class="modal__value-list value__list">
-                  <li class="value__item">
-                    <number class="value__list-number value__number-1">650</number>
-                    <p class="value__list-text">ккал</p>
-                  </li>
-                  <li class="value__item">
-                    <number class="value__list-number value__number-2">34</number>
-                    <p class="value__list-text">белки</p>
-                  </li>
-                  <li class="value__item">
-                    <number class="value__list-number value__number-3">60</number>
-                    <p class="value__list-text">жиры</p>
-                  </li>
-                  <li class="value__item">
-                    <number class="value__list-number value__number-4">12</number>
-                    <p class="value__list-text">углеводы</p>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+      <section class="future">
+        <div class="future__description">
+          <h3 class="future__title">Какие у вас планы на будущее?</h3>
+          <p class="future__text">Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.</p>
+        </div>
+        <ul class="future__list">
+          <li class="future__option">
+            <input class="visually-hidden  future__input" type="radio" name="application-group" value="layout" id="filter-layout">
+            <label class="future__label" for="filter-layout">Верстать</label>
+          </li>
+          <li class="future__option">
+            <input class="visually-hidden  future__input" type="radio" name="application-group" value="JS" id="filter-JS" checked>
+            <label class="future__label" for="filter-JS">Прокачиваться в JS</label>
+          </li>
+          <li class="future__option">
+            <input class="visually-hidden  future__input" type="radio" name="application-group" value="manager" id="filter-manager">
+            <label class="future__label" for="filter-manager">Менеджерство</label>
+          </li>
+          <li class="future__option">
+            <input class="visually-hidden  future__input" type="radio" name="application-group" value="other" id="filter-other">
+            <label class="future__label" for="filter-other">Другое</label>
+          </li>
+        </section>
+        <div class="signature">
+          <div class="signature__wrapper">
+            <label class="signature__label" for="signature-data">Дата заполнения</label>
+            <input type="text" class="signature__input" name="signature" id="signature-data" placeholder="01.01.2016" value="02.02.2019">
           </div>
         </div>
-        <div class="modal__buttoms">
-          <div class="modal__quantity">
-            <span class="modal__quantity-number quantity-number__minus">-</span>
-            <span class="quantity-number__number">2</span>
-            <span class="modal__quantity-number quantity-number__plus">+</span>
-          </div>
-          <button type="submit" class="modal__submit modal__submit--mobile">Готово</button>
-          <div  class="modal__submit modal__submit--desktop">
-            <span class="modal__submit-number">246 ₽</span>
-            <span class="modal__submit-text">Добавить</span>
-          </div>
-        </div>
-      </div>
-      <button class="modal__close" type="button">x</button>
-    </section>
-    <script src="js/scripts.js"> </script>
-  </body>
-  </html>
+      </body>
+
+      <script>
+      $(document)
+      .one('focus.autoExpand', 'textarea.autoExpand', function(){
+        var savedValue = this.value;
+        this.value = '';
+        this.baseScrollHeight = this.scrollHeight;
+        this.value = savedValue;
+      })
+      .on('input.autoExpand', 'textarea.autoExpand', function(){
+        var minRows = this.getAttribute('data-min-rows')|0, rows;
+        this.rows = minRows;
+        rows = Math.ceil((this.scrollHeight - this.baseScrollHeight) / 16);
+        this.rows = minRows + rows;
+      });
+
+      var sliderLi = document.querySelector('.slider__option');
+      sliderLi.addEventListener('click', function() {
+        if (sliderLi.classList.contains('slider__option')) {
+          sliderLi.classList.add('slider__option--active');
+
+        });
+        </script>
+        </html>

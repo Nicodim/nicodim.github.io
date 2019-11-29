@@ -118,8 +118,8 @@
 
                 <!-- Добавление хэш-тегов и комментария к изображению -->
                 <fieldset class="img-upload__text text">
-                  <input class="text__hashtags" name="hashtags" placeholder="#хэш-тег">
-                  <textarea class="text__description" name="description" minlength="1" maxlength="140" placeholder="Ваш комментарий..." required></textarea>
+                  <input class="text__hashtags" name="hashtags" minlength="2" maxlength="20" placeholder="#хэш-тег">
+                  <textarea class="text__description" name="description" minlength="1" maxlength="140" placeholder="Ваш комментарий..."></textarea>
                 </fieldset>
 
                 <!-- Кнопка для отправки данных на сервер -->
@@ -161,7 +161,7 @@
             </li>
             <li class="social__comment">
               <img class="social__picture" src="img/avatar-3.svg" alt="Аватар комментатора фотографии" width="35" height="35">
-               <p class="social__text">Да это фоташоп!!!!!!!!</p>
+              <p class="social__text">Да это фоташоп!!!!!!!!</p>
             </li>
           </ul>
 
@@ -171,7 +171,7 @@
           <!-- Форма для отправки комментария -->
           <div class="social__footer">
             <img class="social__picture" src="img/avatar-6.svg" alt="Аватар комментатора фотографии" width="35" height="35">
-            <input type="text" class="social__footer-text" minlength="1" maxlength="140" placeholder="Ваш комментарий..." required>
+            <input type="text" class="social__footer-text" minlength="1" maxlength="140" placeholder="Ваш комментарий...">
             <button type="button" class="social__footer-btn" name="button">Отправить</button>
           </div>
         </div>
@@ -236,6 +236,14 @@
     <div class="img-upload__message  img-upload__message--loading">Загружаем...</div>
   </template>
 
-<script src="js/main.js"></script>
+  <script src="js/load.js"></script>
+  <script src="js/debounce.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/renderPreview.js"></script>
+  <script src="js/full.js"></script>
+  <script src="js/new.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/effect-value.js"></script>
 </body>
 </html>

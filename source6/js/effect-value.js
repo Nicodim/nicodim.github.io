@@ -146,4 +146,5 @@
       effectLevel.value = target.style.left;
     };
   });
+  
 })();
